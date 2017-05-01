@@ -428,3 +428,9 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 <a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat"></a>
 <a href="https://codebeat.co/projects/github-com-onevcat-kingfisher"><img alt="codebeat badge" src="https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg" /></a>
 </p>
+
+---
+
+没了，🙄
+
+:wq
