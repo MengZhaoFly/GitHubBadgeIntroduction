@@ -1,2 +1,271 @@
-# GitHubBadgeIntroduction
-Introduction of GitHub badge.
+# GitHub 项目徽章的添加和设置
+
+许多同学在 GitHub 上发布了自己的开源项目，有辛苦开发的实用工具、构思巧妙的开源库、别具一格的 App、精心整理的示例代码等等。
+
+自己花了大把时间和精力构建的项目，当然是希望能够得到更多人的关注，被更多的人知晓或者使用。如何更好滴向他人展示自己的项目，介绍项目相关信息呢？用一些通用的小图标来描述项目相关信息不失为一种很棒的选择！
+
+# 一. 徽标简介
+
+GitHub 项目的 README.md 中可以添加徽章（Badge）对项目进行标记和说明，这些好看的小图标不仅简洁美观，而且还包含了清晰易读的信息。
+
+徽标主要由图片和对应的链接（当然，你可以不填）组成，徽标图片的话一般由左半部分的名称和右半部分的值组成。
+
+![一枚普通的徽标](http://upload-images.jianshu.io/upload_images/1018190-3489b47031ed2017.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+GitHub 徽标的官方网站是 [http://shields.io/](http://shields.io/)，我萌可以在官网预览绝大部分的徽标样式，然后选择自己喜欢的（当然首先需要适用于自己的目标项目）徽标，添加到自己的项目文档中去。
+
+![Shields.IO](http://upload-images.jianshu.io/upload_images/1018190-b2676f0571e5684c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+下面贴出几个栗子以供参考：
+
+![还没用过的 ReSwift](http://upload-images.jianshu.io/upload_images/1018190-1f02477adb71c059.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![大名鼎鼎的 Kingfisher](http://upload-images.jianshu.io/upload_images/1018190-1586a469d695a1ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![家喻户晓的 Alamofire](http://upload-images.jianshu.io/upload_images/1018190-7d3c3ed451b13db2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+徽标并不是添加的越多越好，合理地选择适合项目的徽标做具有针对性地添加才是理性的做法，像 [EFQRCode](https://github.com/EyreFree/EFQRCode) 这样堆积徽标的无脑行为并不是十分可取，在这里提出这一点，希望大家不要盲目追求数量。合理的文档组织方式应该是图文并茂的，多了或是少了任何一点，都不会十分完美，反而可能会失去应有的效果。
+
+![腊鸡 EFQRCode](http://upload-images.jianshu.io/upload_images/1018190-e4803ca79423c26d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+当然如果个人比较喜欢的话，请随意添加。
+
+![请随意](http://upload-images.jianshu.io/upload_images/1018190-bd12202658a6a391.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+# 二. 常用徽标添加
+
+常用的徽标主要有持续集成状态、项目版本信息、代码测试覆盖率、项目支持平台、项目语言、代码分析等，下面我萌就来依次添加这些可爱的徽标！
+
+## 1. 持续集成状态
+
+持续集成的话推荐 [Travis CI](https://travis-ci.org/)，针对开源项目免费，所以你的私有项目无法享受到免费的持续构建服务，不过我们的目的貌似就是给开源项目添加徽标。同类型的产品还有 [CircleCI](https://circleci.com)，不过目前跑 OS X 项目需要额外付费，免费版提供一个 Linux 项目队列，作为非付费用户在这里不多做评价，大佬们可以自己试下。其他还有诸如 [Jenkins](https://jenkins.io/)
+ 和 [Codeship](https://codeship.com/) 等，大家可以在 [http://shields.io/](http://shields.io/) 的 `Build` 这一栏自行翻阅。
+
+接下来就是 Travis CI 的集成工作了，首先打开 [https://travis-ci.org/](https://travis-ci.org/) 注册一个 Travis-CI 账号，可以通过 GitHub 账户直接登陆。
+
+然后参考[官方文档](https://docs.travis-ci.com/user/getting-started/)，根据你的项目语言或类型选择具体的配置方式，主要就是在项目中添加一个 `.travis.yml` 配置文件，告诉 Travis CI 怎样对你的项目进行编译或测试。这里有一个 Swift CocoaPods 库的集成示例，可以参考一下：[http://www.jianshu.com/p/beaa9ec9183d](http://www.jianshu.com/p/beaa9ec9183d)。
+
+然后徽标图片地址是这个样子的：
+
+```
+http://img.shields.io/travis/{GitHub 用户名}/{项目名称}.svg
+```
+
+将上面 URL 中的 {GitHub 用户名} 和 {项目名称} 替换为你的即可，再加上该项目在 Travis CI 上的地址，以 Alamofire 为例，最后集成完成的 Markdown 代码和效果大概是这个样子：
+
+```markdown
+[![](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
+```
+[![](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)](https://travis-ci.org/Alamofire/Alamofire)
+
+当然如果你的编译没跑过或者发生错误之类的，会出现其他的状态，比如酱紫的：
+
+![](https://img.shields.io/codeship/d6c1ddd0-16a3-0132-5f85-2e35c05e22b1.svg)
+
+![](https://img.shields.io/vso/build/larsbrinkhoff/953a34b9-5966-4923-a48a-c41874cfb5f5/1.svg)
+
+![](https://img.shields.io/snap-ci/ThoughtWorksStudios/eb_deployer/master.svg)
+
+这里需要指出的是，开源项目的 Travis CI 也是公开的，包括日志和历史记录在内，都是针对所有人可见的，所以小伙伴们一定不要把密码、私钥等重要信息暴露了。
+
+## 2. 项目下载量
+
+项目被下载的次数，这个的话各个平台的统计都是独立的，比如发布在 CocoaPods 的项目下载量徽标图片地址如下，以 AFNetworking 为例：
+
+```
+总下载量：https://img.shields.io/cocoapods/dt/AFNetworking.svg
+月下载量：https://img.shields.io/cocoapods/dm/AFNetworking.svg
+周下载量：https://img.shields.io/cocoapods/dw/AFNetworking.svg
+```
+
+效果如下：
+
+![](https://img.shields.io/cocoapods/dt/AFNetworking.svg)
+![](https://img.shields.io/cocoapods/dm/AFNetworking.svg)
+![](https://img.shields.io/cocoapods/dw/AFNetworking.svg)
+
+如果你的库已经发布到 CocoaPods 的话，我们只要把上面的 AFNetworking 改为自己的项目名称即可。更多其他发布方式如 apm、npm、Gem 等可查阅 [http://shields.io/](http://shields.io/) 的 `Downloads` 一栏。
+
+## 3. 项目版本信息
+
+
+
+## 4. 代码测试覆盖率
+
+## 5. 项目支持平台
+
+## 6. 项目语言
+
+## 7. 代码分析
+
+## 8. 开源协议类型
+
+这个的话，我用的是 CocoaPods 提供的，URL 如下：
+
+```
+https://img.shields.io/cocoapods/l/{项目名称}.svg?style=flat
+```
+
+以 Alamofire 为例，Markdown 代码和效果如下：
+
+```markdown
+![](https://img.shields.io/cocoapods/l/Alamofire.svg?style=flat)
+```
+
+![](https://img.shields.io/cocoapods/l/Alamofire.svg?style=flat)
+
+# 三. 自定义徽标
+
+## 1. 标题／内容／颜色／链接
+
+如果以上这些徽标没有满足你的需求，我们还可以定制自己的个性化徽标，`shields.io` 提供了添加自定义徽标的功能，通过修改如下 URL 即可获取自定义徽标图片：
+
+```
+https://img.shields.io/badge/{徽标标题}-{徽标内容}-{徽标颜色}.svg
+```
+
+{徽标标题}：徽标左半部分的文本   
+{徽标内容}：徽标右半部分的文本   
+{徽标颜色}：徽标颜色，可以是 red、green、blue 等颜色英文单词，也可以直接写十六进制的颜色值，如 ff69b4，示例如下：
+
+![](https://img.shields.io/badge/color-brightgreen-brightgreen.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-green-green.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-yellowgreen-yellowgreen.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-yellow-yellow.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-orange-orange.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-red-red.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-lightgrey-lightgrey.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-blue-blue.svg?maxAge=2592000)
+![](https://img.shields.io/badge/color-ff69b4-ff69b4.svg?maxAge=2592000)
+
+将其中的 {徽标标题}、{徽标内容}、{徽标颜色} 分别替换为需要的内容即可，例如我的微博徽标图片地址如下：
+
+```
+https://img.shields.io/badge/weibo-@EyreFree-red.svg
+```
+
+再结合我的微博地址 [http://weibo.com/eyrefree777](http://weibo.com/eyrefree777) 后完整徽标代码和效果如下（如果这段代码用在 GitHub 的话，点击该徽标会打开对应的 URL 地址，即直接跳到我的微博）：
+
+```markdown
+[![](https://img.shields.io/badge/weibo-@EyreFree-red.svg)](http://weibo.com/eyrefree777)
+```
+
+[![](https://img.shields.io/badge/weibo-@EyreFree-red.svg)](http://weibo.com/eyrefree777)
+
+同理我的推特徽标代码和效果如下：
+
+```markdown
+[![](https://img.shields.io/badge/weibo-@EyreFree-red.svg)](http://weibo.com/eyrefree777)
+```
+
+[![](https://img.shields.io/badge/twitter-@EyreFree777-blue.svg)](https://twitter.com/EyreFree777)
+
+## 2. 附加参数
+
+可以在徽标图片 URL 后面带上一些参数来控制徽标的样式，这一部分是可选的，不想折腾的话默认的样式就挺好了，可以不看这里的。
+
+使用方法就是在徽标图片 URL 后面跟上 ?{参数名}={参数值}
+
+### 1. style
+
+style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 的，示例代码和效果如下：
+
+#### plastic
+
+```markdown
+https://img.shields.io/cocoapods/v/Alamofire.svg?style=plastic
+```
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=plastic)
+
+#### flat
+
+```markdown
+https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat
+```
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat)
+
+#### flat-square
+
+```markdown
+https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat-square
+```
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat-square)
+
+#### social
+
+```markdown
+https://img.shields.io/cocoapods/v/Alamofire.svg?style=social
+```
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=social)
+
+### 2. label
+
+该参数可以用来强制覆盖原有的徽标标题文字，效果如下，原有的 pod 字样已经被覆盖了：
+
+```markdown
+https://img.shields.io/cocoapods/v/Alamofire.svg?label=healthinesses
+```
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?label=healthinesses)
+
+
+### 3. logo
+
+该参数可以用来为徽标添加 logo，logo 图片会出现在左半部分的徽标标题左边，logo 图片高度必须 ≥ 14px，logo 图片需要先转为 base64 编码然后直接插入到 URL 中（可以用 [http://b64.io/](http://b64.io/) 将图片转为 base64 编码的字符串），格式如下。
+
+```
+?logo={base64 编码后的图片数据}
+```
+
+示例代码和效果如下：
+
+```
+https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAACJ0lEQVR4AW2Qy0tUfxjGv3Pm3O%2BXGec3jnMZZ9Rxxp%2BWkYpJ2QkVIzDpkkoGBSOpBZmWgRIkWSs30SJchC26B9aijKLaFET9Be1q46ayRVDU5uk9Q8seeOG8X573eT%2FnZbwQqo5l5Rube52PQdH3BcaY4SbEiy2%2B%2FWFLv7ueblJv0luJmRHBHzqfwuyDRkzfKqB8pRZeQnwzuZynvgHTtwsYvZRBs2%2BVGSU5nfsjX2bocexqDsMLKXgZCQfmkzi6lK0EDJxOfNJdoYORQl5O3OeXY5%2BH59PI5XXUMh3RuIQR6v2J2Ld8h3488FXMBWb2TJkNPw9GUzirF3HX2oZFrQUD0Rqc84rfVcaPs0D%2FcTK%2FQ6y6N6eVsJX3MCglcUzJYVytw6CYxKRSj1Elu0bWCBNCXCnPGz96pTieOTvxyN6OIm%2Fhid2Nx1SzWhGxsLwR4aQ9rFOMPl8lwwQlvXZ78NLZhRbBwZrTjReOjzuENKc1YUTOrLJ%2BKf7%2BsrEJhIL7dhfOaI34n7cxpRWwYnbghFqPMmENyelXzOLE0d1SNbrFGOKcgmDwnduH61Y7zJCAvVINDisZJMPqNEuHVeOQnPr11u3FESWLa2ZbBecp8VNaZXBBb15njHUxmxPC7YK3uGS0YkzNo1VwcZJWtwkeThHKMg33SfEVMqsskBeSjLqwMZYKa18ppXKRwESIv0u8NVPFyRb7hxK0ZYX%2BfIPO95D6KBXH%2FuoPnu%2FBfZ7Zxb0AAAAASUVORK5CYII
+```
+
+![](https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAACJ0lEQVR4AW2Qy0tUfxjGv3Pm3O%2BXGec3jnMZZ9Rxxp%2BWkYpJ2QkVIzDpkkoGBSOpBZmWgRIkWSs30SJchC26B9aijKLaFET9Be1q46ayRVDU5uk9Q8seeOG8X573eT%2FnZbwQqo5l5Rube52PQdH3BcaY4SbEiy2%2B%2FWFLv7ueblJv0luJmRHBHzqfwuyDRkzfKqB8pRZeQnwzuZynvgHTtwsYvZRBs2%2BVGSU5nfsjX2bocexqDsMLKXgZCQfmkzi6lK0EDJxOfNJdoYORQl5O3OeXY5%2BH59PI5XXUMh3RuIQR6v2J2Ld8h3488FXMBWb2TJkNPw9GUzirF3HX2oZFrQUD0Rqc84rfVcaPs0D%2FcTK%2FQ6y6N6eVsJX3MCglcUzJYVytw6CYxKRSj1Elu0bWCBNCXCnPGz96pTieOTvxyN6OIm%2Fhid2Nx1SzWhGxsLwR4aQ9rFOMPl8lwwQlvXZ78NLZhRbBwZrTjReOjzuENKc1YUTOrLJ%2BKf7%2BsrEJhIL7dhfOaI34n7cxpRWwYnbghFqPMmENyelXzOLE0d1SNbrFGOKcgmDwnduH61Y7zJCAvVINDisZJMPqNEuHVeOQnPr11u3FESWLa2ZbBecp8VNaZXBBb15njHUxmxPC7YK3uGS0YkzNo1VwcZJWtwkeThHKMg33SfEVMqsskBeSjLqwMZYKa18ppXKRwESIv0u8NVPFyRb7hxK0ZYX%2BfIPO95D6KBXH%2FuoPnu%2FBfZ7Zxb0AAAAASUVORK5CYII)
+
+### 4. logoWidth
+
+该参数可以设置在上一个参数 logo 中添加的图标的宽度，设为 0 的话即为忽略该参数，示例代码和效果如下：
+
+```
+![](https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logoWidth=100&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAACJ0lEQVR4AW2Qy0tUfxjGv3Pm3O%2BXGec3jnMZZ9Rxxp%2BWkYpJ2QkVIzDpkkoGBSOpBZmWgRIkWSs30SJchC26B9aijKLaFET9Be1q46ayRVDU5uk9Q8seeOG8X573eT%2FnZbwQqo5l5Rube52PQdH3BcaY4SbEiy2%2B%2FWFLv7ueblJv0luJmRHBHzqfwuyDRkzfKqB8pRZeQnwzuZynvgHTtwsYvZRBs2%2BVGSU5nfsjX2bocexqDsMLKXgZCQfmkzi6lK0EDJxOfNJdoYORQl5O3OeXY5%2BH59PI5XXUMh3RuIQR6v2J2Ld8h3488FXMBWb2TJkNPw9GUzirF3HX2oZFrQUD0Rqc84rfVcaPs0D%2FcTK%2FQ6y6N6eVsJX3MCglcUzJYVytw6CYxKRSj1Elu0bWCBNCXCnPGz96pTieOTvxyN6OIm%2Fhid2Nx1SzWhGxsLwR4aQ9rFOMPl8lwwQlvXZ78NLZhRbBwZrTjReOjzuENKc1YUTOrLJ%2BKf7%2BsrEJhIL7dhfOaI34n7cxpRWwYnbghFqPMmENyelXzOLE0d1SNbrFGOKcgmDwnduH61Y7zJCAvVINDisZJMPqNEuHVeOQnPr11u3FESWLa2ZbBecp8VNaZXBBb15njHUxmxPC7YK3uGS0YkzNo1VwcZJWtwkeThHKMg33SfEVMqsskBeSjLqwMZYKa18ppXKRwESIv0u8NVPFyRb7hxK0ZYX%2BfIPO95D6KBXH%2FuoPnu%2FBfZ7Zxb0AAAAASUVORK5CYII)
+```
+
+![](https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logoWidth=100&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAACJ0lEQVR4AW2Qy0tUfxjGv3Pm3O%2BXGec3jnMZZ9Rxxp%2BWkYpJ2QkVIzDpkkoGBSOpBZmWgRIkWSs30SJchC26B9aijKLaFET9Be1q46ayRVDU5uk9Q8seeOG8X573eT%2FnZbwQqo5l5Rube52PQdH3BcaY4SbEiy2%2B%2FWFLv7ueblJv0luJmRHBHzqfwuyDRkzfKqB8pRZeQnwzuZynvgHTtwsYvZRBs2%2BVGSU5nfsjX2bocexqDsMLKXgZCQfmkzi6lK0EDJxOfNJdoYORQl5O3OeXY5%2BH59PI5XXUMh3RuIQR6v2J2Ld8h3488FXMBWb2TJkNPw9GUzirF3HX2oZFrQUD0Rqc84rfVcaPs0D%2FcTK%2FQ6y6N6eVsJX3MCglcUzJYVytw6CYxKRSj1Elu0bWCBNCXCnPGz96pTieOTvxyN6OIm%2Fhid2Nx1SzWhGxsLwR4aQ9rFOMPl8lwwQlvXZ78NLZhRbBwZrTjReOjzuENKc1YUTOrLJ%2BKf7%2BsrEJhIL7dhfOaI34n7cxpRWwYnbghFqPMmENyelXzOLE0d1SNbrFGOKcgmDwnduH61Y7zJCAvVINDisZJMPqNEuHVeOQnPr11u3FESWLa2ZbBecp8VNaZXBBb15njHUxmxPC7YK3uGS0YkzNo1VwcZJWtwkeThHKMg33SfEVMqsskBeSjLqwMZYKa18ppXKRwESIv0u8NVPFyRb7hxK0ZYX%2BfIPO95D6KBXH%2FuoPnu%2FBfZ7Zxb0AAAAASUVORK5CYII)
+
+### 5. link
+
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=social&link=http://www.baidu.com&link=http://www.google.com.hk)
+
+### 6. colorA
+
+### 7. colorB
+
+### 8. maxAge
+
+# 四. 其他
+
+默认的徽标是居左排列的，如果需要居中排列需要使用 HTML 的方式来插入徽标，可参考 [Kingfisher](https://github.com/onevcat/Kingfisher)：
+
+```html
+<p align="center">
+<a href="https://travis-ci.org/onevcat/Kingfisher"><img src="https://img.shields.io/travis/onevcat/Kingfisher/master.svg"></a>
+<a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-ready-orange.svg"></a>
+<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat"></a>
+<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
+<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat"></a>
+<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher"><img alt="codebeat badge" src="https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg" /></a>
+<img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
+</p>
+```
+
+---
+
+本文链接：[http://www.jianshu.com/p/beaa9ec9183d](http://www.jianshu.com/p/beaa9ec9183d)
