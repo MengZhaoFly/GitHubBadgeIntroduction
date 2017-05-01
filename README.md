@@ -122,7 +122,7 @@ https://img.shields.io/badge/pod-{版本号}-519dd9.svg
 
 代码测试覆盖率的话推荐 [Codecov](https://codecov.io/)。同类产品有 [Coveralls](https://coveralls.io/)，不过网站风格略复古，文档也不详细，安装过程也复杂，需要配置一大堆奇怪的东西，遂不推荐。
 
-同样的，Codecov 可以直接使用 GitHub 账号登陆，需要结合 Travis CI 使用，在 `.travis.yml` 文件中添加一个回掉触发 Codecov 的刷新，同时需要打开工程中的测试覆盖信息收集，XCode 中的设置如下
+同样的，Codecov 可以直接使用 GitHub 账号登陆，需要结合 Travis CI 使用，在 `.travis.yml` 文件中添加一个回调触发 Codecov 的刷新，同时需要打开工程中的测试覆盖信息收集，XCode 中的设置如下
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1018190-a1fceb0028ce645a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
