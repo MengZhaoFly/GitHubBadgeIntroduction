@@ -104,7 +104,7 @@ https://img.shields.io/cocoapods/v/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供项目版本信息的徽标的话，可以用自定义徽标的方式实现，具体可参考 [自定义徽标](# 三)，这里给出徽标代码：
+如果你的发布工具不提供项目版本信息的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/pod-{版本号}-519dd9.svg
@@ -152,7 +152,7 @@ https://img.shields.io/cocoapods/p/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供项目支持平台的徽标的话，可以用自定义徽标的方式实现，具体可参考 [自定义徽标](# 三. 自定义徽标)，这里给出徽标代码：
+如果你的发布工具不提供项目支持平台的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/platform-{项目支持平台}-lightgrey.svg
@@ -168,7 +168,7 @@ https://img.shields.io/badge/platform-{项目支持平台}-lightgrey.svg
 
 ## 6. 项目语言
 
-嗯，这个完全是用自定义徽标实现的，具体可参考 [自定义徽标](# 三. 自定义徽标)，这里给出徽标代码：
+嗯，这个完全是用自定义徽标实现的，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/language-{项目语言}-{背景色}.svg
@@ -218,7 +218,7 @@ https://img.shields.io/cocoapods/l/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/l/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供开源协议类型的徽标的话，可以用自定义徽标的方式实现，具体可参考 [自定义徽标](# 三. 自定义徽标)，这里给出徽标代码：
+如果你的发布工具不提供开源协议类型的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/license-{协议名称}-black.svg
@@ -409,24 +409,24 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 ```html
 <p align="center">
-<a href="https://travis-ci.org/onevcat/Kingfisher"><img src="https://img.shields.io/travis/onevcat/Kingfisher/master.svg"></a>
-<a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
-<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-ready-orange.svg"></a>
-<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat"></a>
-<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
-<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat"></a>
-<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher"><img alt="codebeat badge" src="https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg" /></a>
+<a href="https://travis-ci.org/onevcat/Kingfisher">![](https://img.shields.io/travis/onevcat/Kingfisher/master.svg)</a>
+<a href="https://github.com/Carthage/Carthage/">![](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)</a>
+<a href="https://swift.org/package-manager/">![](https://img.shields.io/badge/SPM-ready-orange.svg)</a>
+<a href="http://onevcat.github.io/Kingfisher/">![](https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat)</a>
+<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE">![](https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat)</a>
+<a href="http://onevcat.github.io/Kingfisher/">![](https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat)</a>
+<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher">![codebeat badge](https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg)</a>
 </p>
 ```
 
 <p align="center">
-<a href="https://travis-ci.org/onevcat/Kingfisher"><img src="https://img.shields.io/travis/onevcat/Kingfisher/master.svg"></a>
-<a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
-<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-ready-orange.svg"></a>
-<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat"></a>
-<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
-<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat"></a>
-<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher"><img alt="codebeat badge" src="https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg" /></a>
+<a href="https://travis-ci.org/onevcat/Kingfisher">![](https://img.shields.io/travis/onevcat/Kingfisher/master.svg)</a>
+<a href="https://github.com/Carthage/Carthage/">![](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)</a>
+<a href="https://swift.org/package-manager/">![](https://img.shields.io/badge/SPM-ready-orange.svg)</a>
+<a href="http://onevcat.github.io/Kingfisher/">![](https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat)</a>
+<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE">![](https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat)</a>
+<a href="http://onevcat.github.io/Kingfisher/">![](https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat)</a>
+<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher">![codebeat badge](https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg)</a>
 </p>
 
 ---
@@ -434,3 +434,7 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 没了，🙄
 
 :wq
+
+---
+
+本文链接：[https://github.com/EyreFree/GitHubBadgeIntroduction](https://github.com/EyreFree/GitHubBadgeIntroduction)
