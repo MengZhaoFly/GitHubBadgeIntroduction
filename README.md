@@ -1,5 +1,3 @@
-# GitHub 项目徽章的添加和设置
-
 许多同学在 GitHub 上发布了自己的开源项目，有辛苦开发的实用工具、构思巧妙的开源库、别具一格的 App、精心整理的示例代码等等。
 
 自己花了大把时间和精力构建的项目，当然是希望能够得到更多人的关注，被更多的人知晓或者使用。如何更好滴向他人展示自己的项目，介绍项目相关信息呢？用一些通用的小图标来描述项目相关信息不失为一种很棒的选择！
@@ -241,7 +239,7 @@ https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logo=data%3Aimage%2F
 
 ### 5. link
 
-![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=social&link=http://www.baidu.com&link=http://www.google.com.hk)
+![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat&link=https://www.baidu.com&link=https://www.google.com.hk)
 
 ### 6. colorA
 
@@ -251,7 +249,7 @@ https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logo=data%3Aimage%2F
 
 # 四. 其他
 
-默认的徽标是居左排列的，如果需要居中排列需要使用 HTML 的方式来插入徽标，可参考 [Kingfisher](https://github.com/onevcat/Kingfisher)：
+默认的徽标是居左排列的，如果需要居中排列需要使用 HTML 的方式来插入徽标，可参考 [Kingfisher](https://github.com/onevcat/Kingfisher)，代码和效果如下：
 
 ```html
 <p align="center">
@@ -265,6 +263,17 @@ https://img.shields.io/badge/gadget-Raspberry%20Pi-pink.svg?logo=data%3Aimage%2F
 <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
 </p>
 ```
+
+<p align="center">
+<a href="https://travis-ci.org/onevcat/Kingfisher"><img src="https://img.shields.io/travis/onevcat/Kingfisher/master.svg"></a>
+<a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-ready-orange.svg"></a>
+<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat"></a>
+<a href="https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>
+<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/p/Kingfisher.svg?style=flat"></a>
+<a href="https://codebeat.co/projects/github-com-onevcat-kingfisher"><img alt="codebeat badge" src="https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg" /></a>
+<img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
+</p>
 
 ---
 
