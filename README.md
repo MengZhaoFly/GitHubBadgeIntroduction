@@ -104,7 +104,7 @@ https://img.shields.io/cocoapods/v/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供项目版本信息的徽标的话，可以用自定义徽标的方式实现，具体可参考 [自定义徽标](# 三. 自定义徽标)，这里给出徽标代码：
+如果你的发布工具不提供项目版本信息的徽标的话，可以用自定义徽标的方式实现，具体可参考 [自定义徽标](# 三)，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/pod-{版本号}-519dd9.svg
