@@ -43,7 +43,7 @@ GitHub 徽标的官方网站是 [http://shields.io/](http://shields.io/)，我�
 同类型的产品还有 [CircleCI](https://circleci.com)，不过目前跑 OS X 项目需要额外付费，免费版提供一个 Linux 项目队列，作为非付费用户在这里不多做评价，大佬们可以自己试下。其他还有诸如 [Jenkins](https://jenkins.io/)
  和 [Codeship](https://codeship.com/) 等，大家可以在 [http://shields.io/](http://shields.io/) 的 `Build` 这一栏自行翻阅。
 
-接下来就是 Travis CI 的集成工作了，首先打开 [https://travis-ci.org/](https://travis-ci.org/) 注册一个 Travis-CI 账号，可以通过 GitHub 账户直接登陆。
+接下来就是 Travis CI 的集成工作了，首先打开 [https://travis-ci.org/](https://travis-ci.org/) 注册一个 Travis-CI 账号，可以通过 GitHub 账户直接登陆。
 
 然后参考 [官方文档](https://docs.travis-ci.com/user/getting-started/)，根据你的项目语言或类型选择具体的配置方式，主要就是在项目中添加一个 `.travis.yml` 配置文件，告诉 Travis CI 怎样对你的项目进行编译或测试。这里有一个 Swift CocoaPods 库的集成示例，可以参考一下：[http://www.jianshu.com/p/beaa9ec9183d](http://www.jianshu.com/p/beaa9ec9183d)。
 
@@ -90,7 +90,7 @@ http://img.shields.io/travis/{GitHub 用户名}/{项目名称}.svg
 
 ## 3. 项目版本信息
 
-这个的话，因为我的 iOS 库是发布在，我用的是 CocoaPods 提供的，URL 如下：
+这个的话，因为我的 iOS 库是发布在 CocoaPods 的，我用的是 CocoaPods 提供的，URL 如下：
 
 ```
 https://img.shields.io/cocoapods/v/{项目名称}.svg?style=flat
@@ -138,7 +138,7 @@ https://img.shields.io/badge/pod-{版本号}-519dd9.svg
 
 ## 5. 项目支持平台
 
-同上，因为我的 iOS 库是发布在，我用的是 CocoaPods 提供的，URL 如下：
+这个的话，因为我的 iOS 库是发布在 CocoaPods 的，我用的是 CocoaPods 提供的，URL 如下：
 
 ```
 https://img.shields.io/cocoapods/p/{项目名称}.svg?style=flat
@@ -204,7 +204,7 @@ Codebeat 可以计算全局项目评分、GPA、和不同命名空间的等级�
 
 ## 8. 开源协议类型
 
-这个的话，因为我的 iOS 库是发布在，我用的是 CocoaPods 提供的，URL 如下：
+这个的话，因为我的 iOS 库是发布在 CocoaPods 的，我用的是 CocoaPods 提供的，URL 如下：
 
 ```
 https://img.shields.io/cocoapods/l/{项目名称}.svg?style=flat
@@ -273,7 +273,7 @@ https://img.shields.io/badge/weibo-@EyreFree-red.svg
 同理我的推特徽标代码和效果如下：
 
 ```markdown
-[![](https://img.shields.io/badge/weibo-@EyreFree-red.svg)](http://weibo.com/eyrefree777)
+[![](https://img.shields.io/badge/twitter-@EyreFree777-blue.svg)](https://twitter.com/EyreFree777)
 ```
 
 [![](https://img.shields.io/badge/twitter-@EyreFree777-blue.svg)](https://twitter.com/EyreFree777)
@@ -292,6 +292,8 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 #### plastic
 
+塑料？大概是指立体效果
+
 ```markdown
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=plastic)
 ```
@@ -299,6 +301,8 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=plastic)
 
 #### flat
+
+正常的样子，扁平化
 
 ```markdown
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat)
@@ -308,6 +312,8 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 #### flat-square
 
+扁平化 + 去除圆角
+
 ```markdown
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat-square)
 ```
@@ -315,6 +321,8 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat-square)
 
 #### social
+
+社交样式
 
 ```markdown
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=social)
