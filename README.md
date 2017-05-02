@@ -104,19 +104,21 @@ https://img.shields.io/cocoapods/v/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/v/Alamofire.svg?style=flat)
 
+如果你的库已经发布到 CocoaPods 的话，我们只要把上面的 Alamofire 改为自己的项目名称即可。更多其他发布方式如 apm、npm、Gem 等可查阅 [http://shields.io/](http://shields.io/) 的 `Version` 一栏。
+
 如果你的发布工具不提供项目版本信息的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
-https://img.shields.io/badge/pod-{版本号}-519dd9.svg
+https://img.shields.io/badge/{发布方式}-{版本号}-519dd9.svg
 ```
 
-将 {版本号} 替换为你的项目目前的版本号即可，例如 v1.2.3：
+将 {发布方式} 和 {版本号} 替换为你的项目目前的发布方式和版本号即可，例如通过 360 应用商店发布，发布版本号为 v1.2.3：
 
 ```
-![](https://img.shields.io/badge/pod-v1.2.3-519dd9.svg)
+![](https://img.shields.io/badge/360_store-v1.2.3-519dd9.svg)
 ```
 
-![](https://img.shields.io/badge/pod-v1.2.3-519dd9.svg)
+![](https://img.shields.io/badge/360_store-v1.2.3-519dd9.svg)
 
 ## 4. 代码测试覆盖率
 
@@ -152,7 +154,7 @@ https://img.shields.io/cocoapods/p/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供项目支持平台的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
+如果你的库已经发布到 CocoaPods 的话，我们只要把上面的 Alamofire 改为自己的项目名称即可。如果你的发布工具不提供项目支持平台的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/platform-{项目支持平台}-lightgrey.svg
@@ -188,7 +190,7 @@ https://img.shields.io/badge/language-{项目语言}-{背景色}.svg
 
 ## 7. 代码分析
 
-Codebeat 可以计算全局项目评分、GPA、和不同命名空间的等级来帮助您量化技术债务和发现重构机会，你唯一需要做的就是连接你的 Github 库，获得反馈就好了。
+[Codebeat](https://codebeat.co/) 可以计算全局项目评分、GPA、和不同命名空间的等级来帮助您量化技术债务和发现重构机会，你唯一需要做的就是连接你的 Github 库，获得反馈就好了。
 
 嗯，上面是官方自述，大概意思就是每次 push 或者 merge 之后会对代码进行分，给出评分，然后告诉你哪些地方复杂度过高需要进行重构之类的。用 GitHub 登陆后绑定项目即可，无需对原有项目进行修改（其实是 codebeat 在你的项目设置里加了一个 Webhook，通知它重新计算评分）。
 
@@ -218,7 +220,7 @@ https://img.shields.io/cocoapods/l/{项目名称}.svg?style=flat
 
 ![](https://img.shields.io/cocoapods/l/Alamofire.svg?style=flat)
 
-如果你的发布工具不提供开源协议类型的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
+如果你的库已经发布到 CocoaPods 的话，我们只要把上面的 Alamofire 改为自己的项目名称即可。如果你的发布工具不提供开源协议类型的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
 https://img.shields.io/badge/license-{协议名称}-black.svg
@@ -242,8 +244,8 @@ https://img.shields.io/badge/license-{协议名称}-black.svg
 https://img.shields.io/badge/{徽标标题}-{徽标内容}-{徽标颜色}.svg
 ```
 
-{徽标标题}：徽标左半部分的文本   
-{徽标内容}：徽标右半部分的文本   
+{徽标标题}：徽标左半部分的文本（短线：--，下划线：\_\_，空格： 或\_）；   
+{徽标内容}：徽标右半部分的文本，同上；   
 {徽标颜色}：徽标右半部分背景颜色，可以是 red、green、blue 等颜色英文单词，也可以直接写十六进制的颜色值，如 ff69b4，示例如下：
 
 ![](https://img.shields.io/badge/color-brightgreen-brightgreen.svg?maxAge=2592000)
