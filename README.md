@@ -268,7 +268,7 @@ https://img.shields.io/cocoapods/l/{项目名称}.svg?style=flat
 如果你的库已经发布到 CocoaPods 的话，我们只要把上面的 Alamofire 改为自己的项目名称即可。如果你的发布工具不提供开源协议类型的徽标的话，可以用自定义徽标的方式实现，具体可参考下文自定义徽标一节，这里给出徽标代码：
 
 ```
-https://img.shields.io/badge/license-{协议名称}-black.svg
+https://img.shields.io/badge/license-{协议名称}-000000.svg
 ```
 
 将 {协议名称} 替换为你的项目所使用的协议名称即可，例如 MIT：
