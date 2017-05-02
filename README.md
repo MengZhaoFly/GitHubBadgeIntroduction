@@ -422,6 +422,8 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 不过试了一下好像没啥效果（并且实在是没想明白怎么通过返回的图片控制不同点击区域的跳转），如果有大佬知道的求指点，感谢！
 
+![](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=http://weibo.com&link=http://weibo.com/u/5886291551)
+
 ### 6. colorA
 
 该参数用来控制徽标左半部分的背景色，只能用十六进制的颜色作为参数哦，不能直接写 red、green、blue 之类的，这里将左半部分的背景色改为 0xabcdef，代码和效果如下：
