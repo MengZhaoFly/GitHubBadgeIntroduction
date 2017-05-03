@@ -426,9 +426,11 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 不过如果直接添加在 Markdown 中显示貌似没啥效果？如果有大佬知道的求指点，感谢！
 
+```
 ![](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com)
+```
 
-<img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com">
+![](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com)
 
 ### 6. colorA
 
