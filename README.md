@@ -488,8 +488,6 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 没了，🙄
 
----
-
 > 本文链接：[https://github.com/EyreFree/GitHubBadgeIntroduction](https://github.com/EyreFree/GitHubBadgeIntroduction)   
 > 如有任何知识产权、版权问题或理论错误，还请指正。   
 > 转载请注明原作者及以上信息。   
