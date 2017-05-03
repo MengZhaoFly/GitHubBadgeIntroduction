@@ -416,13 +416,19 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 ### 5. link
 
-据说该参数是用来设置点击后跳转的 URL 的（嗯，俗称超链接），官方描述如下：
+据说该参数是用来设置 style 为 social 类型点击后跳转的 URL 的（嗯，俗称超链接），并且应该能够设置左右两边为不同的 URL，官方描述如下：
 
 - Specify what clicking on the left/right of a badge should do (esp. for social badge style)
 
-不过试了一下好像没啥效果（并且实在是没想明白怎么通过返回的图片控制不同点击区域的跳转），如果有大佬知道的求指点，感谢！
+如果把 URL 贴到浏览器中直接访问的确是这样的，比如直接在浏览器中打开下面这个链接，点击左半部分会跳到百度，右半部分则跳到 Google（感谢 @yuzhouwww 同学的提示）：
 
-![](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=http://weibo.com&link=http://weibo.com/u/5886291551)
+[https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com)
+
+不过如果直接添加在 Markdown 中显示貌似没啥效果？如果有大佬知道的求指点，感谢！
+
+![](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com)
+
+<img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com">
 
 ### 6. colorA
 
