@@ -420,7 +420,7 @@ style 控制徽标的主体样式，有四种，不设置的话默认是 `flat` 
 
 - Specify what clicking on the left/right of a badge should do (esp. for social badge style)
 
-如果把 URL 贴到浏览器中直接访问的确是这样的，比如直接在浏览器中打开下面这个链接，点击左半部分会跳到百度，右半部分则跳到 Google（感谢 @yuzhouwww 同学的提示）：
+如果把 URL 贴到浏览器中直接访问的确是这样的，比如直接在浏览器中打开下面这个链接，点击左半部分会跳到百度，右半部分则跳到 Google（感谢 [@yuzhouwww](https://github.com/yuzhouwww) 同学的提示）：
 
 [https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com](https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=social&link=https://www.baidu.com&link=https://www.google.com)
 
